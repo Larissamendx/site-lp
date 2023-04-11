@@ -12,7 +12,7 @@ $mustard-yellow: #fbc90b;
   src: url("../Assets/univers-next-pro-cufonfonts/UniversNextProBold.ttf");
 
   font-family: 'universRegular';
-  src: url("../Assets/univers-next-pro-cufonfonts/UniversNextProRegular.ttf");
+  src: url("../Assets/univers-next-pro-cufonfonts/UniversNextProItalic.ttf");
 
   font-family: 'universMedium';
   src: url("../Assets/univers-next-pro-cufonfonts/UniversNextProMediumCondensed.ttf");
@@ -29,7 +29,15 @@ body {
   padding-left: 20px;
 
   span {
-    font-size: 28px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #486018;
+    align-self: center;
+
+  }
+  .span-2022 {
+    font-weight: 600;
+    color: #486018;
   }
 }
 
@@ -164,6 +172,10 @@ body {
 
 .second-col {
   margin-top: 40px;
+
+  img {
+    width: 100%;
+  }
 }
 
 .background-img-text-2 {
@@ -331,6 +343,9 @@ body {
   padding: 150px 0;
   background-image: url(../Assets/img.png);
   display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 
   h2 {
     justify-content: center;
@@ -338,8 +353,9 @@ body {
     font-family: universMedium;
     font-weight: 500;
     color: #000;
-    width: 60%;
-    padding: 0 100px;
+    width: 70%;
+    // padding: 0 100px;
+    margin: auto;
 
     .span-1 {
       background-color: #c4e877;
