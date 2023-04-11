@@ -599,27 +599,85 @@ body {
 .Container-destaques {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  // margin-bottom: 60px;
+
+  .title {
+    margin-bottom: 80px;
+  }
 
   .cards-asg {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #eee;
+
+    .card-asg {
+      margin-top: -15px;
+    }
     
     .card-asg {
       background-color: #fff;
       display: flex;
-      margin-top: 20px;
       flex-direction: column;
-      // align-items: center;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 0 20px;
       width: 90%;
   
-      .carg-asg-img {
-        align-self: center;
-        width: 80%;
+      .carg-asg-img-blue {
+        display: flex;
+        justify-content: center;
+        width: 85%;
         background-color: $blue-color;
         margin-bottom: 30px;
+
+        img {
+          padding: 20px;
+        }
+      }
+      .carg-asg-img-green {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        background-color: $primary-color;
+        margin-bottom: 30px;
+
+        img {
+          padding: 20px;
+        }
+      }
+      .carg-asg-img-yellow {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        background-color: $mustard-yellow;
+        margin-bottom: 30px;
+
+        img {
+          padding: 20px;
+        }
+      }
+
+      .card-asg-body {
+        width: 85%;
+        margin-bottom: 30px;
+
+        span {
+          font-weight: bold;
+        }
+
+        .card-asg-button-blue {
+          color: #000;
+          background-color: $blue-color;
+        }
+        .card-asg-button-green {
+          color: #000;
+          background-color: $primary-color;
+        }
+        .card-asg-button-yellow {
+          color: #000;
+          background-color: $mustard-yellow;
+        }
       }
     }
   }
