@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="146.145" height="151.191" viewBox="0 0 146.145 151.191">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Caminho_3369" data-name="Caminho 3369" d="M0,57.968H146.145V-93.224H0Z" transform="translate(0 93.224)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_209" data-name="Grupo 209" transform="translate(0 93.224)">
+    <g id="Grupo_208" data-name="Grupo 208" transform="translate(0 -93.224)" clip-path="url(#clip-path)">
+      <g id="Grupo_207" data-name="Grupo 207" transform="translate(2.433 2.434)">
+        <path id="Caminho_3368" data-name="Caminho 3368" d="M54.167,36.757,44.076-59.112H28.938L18.847,36.757,8.757-33.883H-6.381l-10.091,70.64m-10.091,0V-3.609H-87.112V87.213H54.167V36.757Zm-55.5-40.365,5.045-30.274,15.136.013,5.047,30.261m20.182,35.32H-77.021V6.482h40.365Zm0,40.365H-77.021V51.895h40.365Zm55.5,0H44.076V51.895H18.847Zm-40.365,0H3.711V51.895H-21.518Z" transform="translate(87.112 59.112)" fill="none" stroke="#2b2e34" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      </g>
+    </g>
+  </g>
+</svg>
