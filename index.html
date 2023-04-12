@@ -18,7 +18,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="Assets/logo.svg" alt="">
-                    <span>RELATÓRIO ANUAL <span class="span-2022">2022</span> </span>
+                    <span class="d-none d-md-block">RELATÓRIO ANUAL <span class="span-2022">2022</span> </span>
                 </a>
                 <div>
                     <button type="button" class="button-header">Download</button>
@@ -65,13 +65,15 @@
             </div>
         </nav>
         <div class="text-banner">
-            <h1 class="background-h1">O ONS e o Sistema</h1>
+            <h1 class="display-5"><span class="title">O ONS e o Sistema</span></h1>
             <h1>
-                Interligado Nacional em 2022</h1>
-            <h2>Saiba mais sobre os principais destaques da nossa atuação em 2023</h2>
+                <span class="title">Interligado Nacional em 2022</span>
+            </h1>
+            <h2><span class="subtitle">Saiba mais sobre os principais destaques da nossa atuação em 2023</span></h2>
             <button type="button" class="button-banner">Baixe o Relatório na íntegra</button>
         </div>
     </div>
+
     <main>
         <div class="section-primary">
             <div class="container text-center">
@@ -110,6 +112,7 @@
                 </div>
             </div>
         </div>
+
         <div class="container text-center">
             <div class="Section-second">
                 <h2>As regiões operadas pelos Centros de Operação do ONS</h2>
@@ -162,50 +165,42 @@
                                 <h2>Geração</h2>
                                 <p><span>1.272 </span>Usinas</p>
                                 <p><span>1.091 </span>Agentes</p>
-                                <p>GW de geração</p>
-                                <ul>
+                                <ul class="pb-auto">
                                     <li>Operação sistêmica
                                         pelo ONS</li>
                                     <li>Operação das instalações pelas empresas de G & T</li>
                                     <li>Abastecimento
                                         no atacado</li>
                                 </ul>
-                                <p>Fonte Saguer</p>
+                                <p class="span-prag">Fonte: SAGER</p>
                             </div>
                         </div>
 
                         <div class="Box-icon"><img src="Assets/icon.svg" alt="">
                             <div class="Box">
-                                <h2>Geração</h2>
-                                <p><span>176 </span>Usinas</p>
-                                <p><span>176 </span>Usinas</p>
-                                <p>GW de geração</p>
-                                <ul>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
-                                </ul>
-                                <p>Fonte Saguer</p>
+                                <h2>Transmissão</h2>
+                                <p>Rede Básica</p>
+                                <p><span>157 </span>Agentes</p>
+                                <p><span>301 </span>Concessões</p>
+                                <p><span>179.311,5 km </span>de linhas de transmissão de 230kV e acima</p>
+
+                                <p class="span-prag">Fontes: Aneel (até 16/12/2022); <a href="#">Dados Abertos</a> ONS (dez/2022)</p>
                             </div>
                         </div>
                         <div class="Box-icon"><img src="Assets/icon.svg" alt="">
                             <div class="Box">
-                                <h2>Transmissão</h2>
-                                <p><span>176 </span>Usinas</p>
-                                <p><span>176 </span>Usinas</p>
-                                <p>GW de geração</p>
+                                <h2>Consumo</h2>
+                                <p>59 distribuidores + 132 consumidores livres</p>
+                                <p><span>190 </span>Agentes</p>
+                                <p>Mais de 1.000 pontos de conexão entre a Rede Básica e a Distribuição (Fiscalização
+                                    pela Aneel)</p>
+                                <p>Carga total no SIN em 2022: 69.936 med*<br>Demanda máxima 2022: 88.576 MWh/h</p>
                                 <ul>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
-                                    <li>Operação sistêmica
-                                        pelo ONS</li>
+                                    <li>Operação pelas
+                                        empresas de D</li>
+                                    <li>Abastecimento no varejo</li>
                                 </ul>
-                                <p>Fonte Saguer</p>
+                                <p class="span-prag">Dados até out/2022</p>
                             </div>
                         </div>
                     </div>
@@ -218,24 +213,12 @@
                 <img src="Assets/img-teste.png" alt="">
                 <div class="Box-img">
                     <p>Em 2022, contamos com <br>
-                        <span>565</span> <br>
+                        <span>958</span> <br>
                         empregados para cumprir nossa missão.
                     </p>
                 </div>
             </div>
             <div class="Container-traines">
-                <!-- <div class="Banner-third">
-                    <h2><span class="span-2">Nossas pessoas<br> em 2022</span></h2>
-                </div> -->
-                <!-- <div class="Container-people">
-                    <img src="Assets/img-teste.png" alt="">
-                    <div class="Box-img">
-                        <p>Em 2022, contamos com <br>
-                            <span>565</span> <br>
-                            empregados para cumprir nossa missão.
-                        </p>
-                    </div>
-                </div> -->
                 <img src="./Assets/traines-contratados.png" class="img-fluid" alt="">
             </div>
             <div class="Banner-third">
@@ -247,21 +230,23 @@
                     destaque para a geração hidrelétrica. </p>
                 <h2>Matriz Elétrica Brasileira 2022-2026</h2>
                 <img src="./Assets/metrizEletrica.png" class="main img-fluid" alt="">
-                <div class="Box-Icon-text">
-                    <div class="Icon-box"><img src="Assets/icon-lampada.svg" alt=""></div>
-                    <p>Geração solar e eólica são complementares, e em 2026
-                        representarão 22,2% da matriz energética</p>
+                <div class="Box-Icon-small">
+                    <div class="Icon-box-small"><img src="Assets/icon-lampada.svg" alt=""></div>
+                    <p><span>Geração solar e eólica são complementares, e em 2026
+                        representarão 22,2% da matriz energética</span></p>
                 </div>
-                <div class="generation">
+                <div class="container generation">
                     <h2>Destaques da integração – geração</h2>
                     <div class="Box-Icon-text">
                         <div class="Icon-box"><img src="Assets/icon-lampada.svg" alt=""></div>
-                        <p>Geração solar e eólica são complementares, e em 2026
+                        <p><span>Fontes eólicas e fotovoltaicas:</span><br>
+                            Geração solar e eólica são complementares, e em 2026
                             representarão 22,2% da matriz energética</p>
                     </div>
                     <div class="Box-Icon-text">
                         <div class="Icon-box"><img src="Assets/icon-lampada.svg" alt=""></div>
-                        <p>Geração solar e eólica são complementares, e em 2026
+                        <p><span>Usinas do Sistema Elétrico Isolado de Roraima:</span><br>
+                            Geração solar e eólica são complementares, e em 2026
                             representarão 22,2% da matriz energética</p>
                     </div>
                     <p>As evoluções no desempenho e na robustez do SIN em 2022, garantidos por nossa coordenação: </p>
@@ -272,7 +257,7 @@
                 </div>
                 <div class="container pb-5">
                     <h2 class="pb-3">Robustez do SIN (em %)</h2>
-                    <img src="./Assets/robustez-sin.png" alt="">
+                    <img src="./Assets/robustez-sin.png" class="img-fluid" alt="">
                 </div>
                 <div class="container Container-cortes">
                     <img src="./Assets/cortes-carga.png" class="img-fluid" alt="">
@@ -282,7 +267,8 @@
                 </div>
                 <div class="container">
                     <h2>Solicitações de Acesso ao SIN</h2>
-                    <p>Com o fim do incentivo de desconto da Tarifa de Uso do Sistema de Transmissão, lidamos em 2022 com um
+                    <p>Com o fim do incentivo de desconto da Tarifa de Uso do Sistema de Transmissão, lidamos em 2022
+                        com um
                         grande
                         aumento no número de solicitações de Acesso Permanente ao SIN.</p>
                 </div>
@@ -306,33 +292,39 @@
                     <span>R$ 30 bilhões</span>
                     <p>em valor agregado <br>à sociedade.</p>
                 </div>
+                <div class="Hidden-Box-img">
+                    <p>cerca de</p>
+                    <span>R$ 30 bilhões</span>
+                    <p>em valor agregado <br>à sociedade.</p>
+                </div>
                 <img src="Assets/img-teste.png" alt="">
             </div>
 
-            <div class="container pt-5 pb-2">
-                <p>Para chegar a este valor total, foram analisadas as atividades abaixo e constatou-se a seguinte economia
+            <div class="container pt-lg-5 pb-lg-2 pb-md-2 pb-sm-5 pb-xs-5">
+                <p>Para chegar a este valor total, foram analisadas as atividades abaixo e constatou-se a seguinte
+                    economia
                     para a sociedade, por conta da atuação do Operador.</p>
             </div>
 
             <div class="container Container-estimates">
-                <div class="row">
-                    <div class="col estimate">
+                <div class="row-1">
+                    <div class="estimate">
                         <p>Otimização do uso das interligações entre subsistemas:</p>
                         <h2><span>R$ 1,4 bilhão</span></h2>
                     </div>
-                    <div class="col estimate">
-                        <p>Otimização do uso das interligações entre subsistemas:</p>
-                        <h2><span>R$ 1,4 bilhão</span></h2>
+                    <div class="estimate">
+                        <p>Implantação de Sistemas Especiais de Proteção (SEPs):</p>
+                        <h2><span>R$ 1,2 bilhão</span></h2>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col estimate">
-                        <p>Otimização do uso das interligações entre subsistemas:</p>
-                        <h2><span>R$ 1,4 bilhão</span></h2>
+                <div class="row-2">
+                    <div class="estimate">
+                        <p>Gestão das intervenções no Sistema de transmissão:</p>
+                        <h2><span>R$ 65 milhões</span></h2>
                     </div>
-                    <div class="col estimate">
-                        <p>Otimização do uso das interligações entre subsistemas:</p>
-                        <h2><span>R$ 1,4 bilhão</span></h2>
+                    <div class="estimate">
+                        <p>Ações para gestão de crise hídrica 2020/2021:</p>
+                        <h2><span>R$ 26,9 bilhões</span></h2>
                     </div>
                 </div>
             </div>
@@ -344,12 +336,14 @@
 
             <div class="container pt-5">
                 <p>O ano de 2022 também foi marcado pela consolidação da Estratégia ASG+ do ONS, que aborda os mais
-                    relevantes aspectos ambientais, sociais e de governança corporativa (ASG) relativos às nossas operações.
+                    relevantes aspectos ambientais, sociais e de governança corporativa (ASG) relativos às nossas
+                    operações.
                 </p>
             </div>
 
             <div class="container pb-5">
-                <p>Um passo fundamental foi a definição de uma matriz de materialidade, que reúne os temas mais críticos e
+                <p>Um passo fundamental foi a definição de uma matriz de materialidade, que reúne os temas mais críticos
+                    e
                     relevantes ligados direta ou indiretamente às nossas atividades, formulada com base em entrevistas e
                     pesquisas com nossos stakeholders internos e externos.</p>
             </div>
@@ -361,16 +355,17 @@
             <div class="container Container-asg-program">
                 <h2 class="pb-4">Programa ASG+</h2>
                 <p>Iniciado em 2021, o Programa ASG+ é dividido em três pilares:
-                    <span class="human">+Humano</span>, <span class="green">+Verde</span> e <span class="social">+Social</span>,
+                    <span class="human">+Humano</span>, <span class="green">+Verde</span> e <span
+                        class="social">+Social</span>,
                     cada um com dois temas específicos de atuação.
                 </p>
 
                 <p>Confira os destaques abaixo e clique no ícone de cada pilar para conferir outros avanços em 2022.</p>
             </div>
 
-            <div class="container Container-destaques pt-3">
+            <div class="Container-destaques mt-5">
                 <h2 class="title">Destaques da evolução do Programa ASG+ em 2022</h2>
-            
+
                 <div class="cards-asg">
                     <div class="card-asg dealocate">
                         <div class="carg-asg-img-blue">
@@ -380,10 +375,12 @@
                             <h3>ONS +Humano</h3>
                             <p>Governança responsável, ética e transparente</p>
                             <ul>
-                                <li><span>Boas práticas de governança do Instituto Brasileiro de Governança Corporativa (IBGC):</span>
+                                <li><span>Boas práticas de governança do Instituto Brasileiro de Governança Corporativa
+                                        (IBGC):</span>
                                     evoluímos de 90.43% para 94.5% de aderência;
                                 </li>
-                                <li><span>Revisão do Código de Conduta Ética e lançamento do Canal exclusivo +Mulher</span>,
+                                <li><span>Revisão do Código de Conduta Ética e lançamento do Canal exclusivo
+                                        +Mulher</span>,
                                     para receber relatos de mulheres, com atendimento feito por psicólogos;
                                 </li>
                                 <li><span>Publicação do primeiro Relatório de Sustentabilidade</span></li>
@@ -391,15 +388,17 @@
                             <p>Pessoas integradas:</p>
                             <ul>
                                 <li><span>Certificação da consultoria Great Place to Work (GPTW) 2022-2023:</span>
-                                    índice de favorabilidade (relacionado à confiança e satisfação geral dos empregaods) de 83%;
+                                    índice de favorabilidade (relacionado à confiança e satisfação geral dos empregaods)
+                                    de 83%;
                                 </li>
                                 <li><span>Diversidade e inclusão:</span>
-                                    posicionamento institucional, agenda de ações e estruturação de grupos de afinidade de gênero e de raça.
+                                    posicionamento institucional, agenda de ações e estruturação de grupos de afinidade
+                                    de gênero e de raça.
                                 </li>
                             </ul>
-                            
+
                             <div>
-                                <a href="#" class="btn card-asg-button-blue">Ver mais detalhes</a>
+                                <a href="#" class="btn card-asg-button card-asg-button-blue">Ver mais detalhes</a>
                             </div>
                         </div>
                     </div>
@@ -414,10 +413,12 @@
                             <p>Transição energética:</p>
                             <ul>
                                 <li><span>Avanços na gestão de fontes renováveis:</span>
-                                    para responder ao aumento da participação da geração solar e eólica, implementamos novos procedimentos operacionais;
+                                    para responder ao aumento da participação da geração solar e eólica, implementamos
+                                    novos procedimentos operacionais;
                                 </li>
                                 <li><span>Participação na COP27 (ONU):</span>
-                                    na Conferência do Clima da Organização das Nações Unidas (Egito), discutimos temas como energias renováveis e descarbonização.
+                                    na Conferência do Clima da Organização das Nações Unidas (Egito), discutimos temas
+                                    como energias renováveis e descarbonização.
                                 </li>
                             </ul>
                             <p>Gestão ecoeficiente de recursos:</p>
@@ -428,13 +429,14 @@
                                 <li><span>Redução de emissões de aproximadamente 32 toneladas de CO<sub>2</sub>:</span>
                                     equivalente ao volume de resíduos reciclados em 2022;
                                 </li>
-                                <li><span>Revisão da Política de Comprars e definição de diretrizes para compras sustentáveis:</span>
+                                <li><span>Revisão da Política de Comprars e definição de diretrizes para compras
+                                        sustentáveis:</span>
                                     atualizamos e aprimoramos os processos de gestão de fornecedores.
                                 </li>
                             </ul>
-                            
+
                             <div>
-                                <a href="#" class="btn card-asg-button-green">Ver mais detalhes</a>
+                                <a href="#" class="btn card-asg-button card-asg-button-green">Ver mais detalhes</a>
                             </div>
                         </div>
                     </div>
@@ -448,25 +450,27 @@
                             <h3>ONS +Social</h3>
                             <p>Sociedade consciente:</p>
                             <ul>
-                                <li><span>Adesão ao Pacto Global:</span>
-                                    evoluímos de 90.43% para 94.5% de aderência;
+                                <li><span>Adesão ao Pacto Global,</span>
+                                    maior iniciativa de sustentabilidade corporativa do mundo, e aos
+                                    <span>Princípios de Empoderamento das Mulheres, da ONU Mulheres,</span>
+                                    com foco na igualdade de gênero;
                                 </li>
-                                <li><span>Boas práticas de governança do Instituto Brasileiro de Governança Corporativa (IBGC):</span>
-                                    evoluímos de 90.43% para 94.5% de aderência;
+                                <li><span>Lançamento de pagina Visite o ONS em nosso <i>site</i>:</span>
+                                    iniciativa visa abrir as portas das nossas quatro sedes para a sociedade.
                                 </li>
                             </ul>
-                            <p>Pessoas integradas:</p>
+                            <p>Responsabilidade socioambiental:</p>
                             <ul>
-                                <li><span>Boas práticas de governança do Instituto Brasileiro de Governança Corporativa (IBGC):</span>
-                                    evoluímos de 90.43% para 94.5% de aderência;
+                                <li><span>Patrocínio a projetos culturais no Rio de Janeiro,</span>
+                                    com foco na geração de trabalho e renda, e na cidadania;
                                 </li>
-                                <li><span>Boas práticas de governança do Instituto Brasileiro de Governança Corporativa (IBGC):</span>
-                                    evoluímos de 90.43% para 94.5% de aderência;
+                                <li><span>Ações de voluntariado e campanhas de doação:</span>
+                                    nossos empregados apoiam projetos sociais com trabalho voluntário, donativos e aportes financeiros.
                                 </li>
                             </ul>
-                            
+
                             <div>
-                                <a href="#" class="btn card-asg-button-yellow">Ver mais detalhes</a>
+                                <a href="#" class="btn card-asg-button card-asg-button-yellow">Ver mais detalhes</a>
                             </div>
                         </div>
                     </div>
@@ -488,7 +492,7 @@
                 <img src="Assets/logo-footer.png" alt="">
             </div>
             <div class="footer">
-                Nossos canais
+                <span>Nossos canais</span>
                 <div>
                     <img src="Assets/linkedin.svg" alt="">
                     <img src="Assets/insta.svg" alt="">

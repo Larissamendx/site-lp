@@ -76,22 +76,26 @@ body {
   padding: 200px 100px;
   background: url("../Assets/banner.png") no-repeat;
   background-size: cover; }
-  .text-banner .background-h1 {
-    width: 42%; }
   .text-banner h1 {
-    background-color: #c4e877;
-    font-size: 4.8vw;
+    font-size: 3.8em;
     letter-spacing: -1px;
     font-weight: 600;
-    font-family: universMedium;
-    width: 63%; }
+    font-family: universMedium; }
+    .text-banner h1 .title {
+      background-color: #c4e877;
+      line-height: 1.35;
+      padding: 0 10px;
+      display: inline-block; }
   .text-banner h2 {
-    background-color: #FFC860;
-    width: 63%;
     font-family: universMedium;
     font-weight: 400;
     letter-spacing: -1.4px;
-    font-size: 30px; }
+    font-size: 1.8em; }
+    .text-banner h2 .subtitle {
+      background-color: #ffe666;
+      line-height: 1.35;
+      padding: 0 10px;
+      display: inline-block; }
 
 /*Primeira section*/
 .col p {
@@ -162,7 +166,8 @@ body {
   margin-bottom: 100px; }
   .section-third-content p {
     text-align: initial;
-    margin-bottom: 20px; }
+    margin-bottom: 30px;
+    font-size: 1.3em; }
 
 .Text-background {
   background-color: #c4e877;
@@ -182,7 +187,6 @@ body {
   .Container-Cards .Card-1 {
     background-color: #d8f0a5;
     width: 330px;
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     height: 100px; }
@@ -260,7 +264,7 @@ body {
   background-size: cover; }
   .Banner-third h2 {
     justify-content: center;
-    font-size: 60px;
+    font-size: 4em;
     font-family: universMedium;
     font-weight: 500;
     color: #000;
@@ -308,15 +312,25 @@ body {
     font-weight: 600;
     text-align: left; }
   .Container-Box .Box {
+    display: flex;
+    flex-direction: column;
     background-color: #d8f0a5;
-    padding: 15px 30px;
+    padding: 15px 25px;
     width: 25vw;
     max-width: 100vw;
-    display: inline-block; }
-    .Container-Box .Box span {
-      font-size: 50px; }
+    height: 60rem; }
     .Container-Box .Box p {
       font-size: 25px; }
+      .Container-Box .Box p span {
+        font-size: 43px; }
+    .Container-Box .Box p.span-prag {
+      font-size: 1.2em;
+      margin-top: auto;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      line-height: 20px;
+      color: #8B8B8D; }
     .Container-Box .Box li {
       margin-bottom: 20px;
       font-size: 20px;
@@ -329,25 +343,24 @@ body {
       padding: 30px;
       width: 7rem; }
 
-.Box-img {
-  background-color: #1ddcff;
-  width: 400px;
-  align-self: center;
-  height: fit-content;
-  margin-left: -100px; }
-
 .Container-people {
   display: flex;
   margin-top: 100px;
   justify-content: center;
   margin-bottom: 60px; }
-  .Container-people p {
-    font-size: 25px;
-    padding: 15px;
-    font-family: universRegular; }
-    .Container-people p span {
-      font-size: 55px;
-      font-family: universMedium; }
+  .Container-people .Box-img {
+    background-color: #1ddcff;
+    width: 400px;
+    align-self: center;
+    height: fit-content;
+    margin-left: -100px; }
+    .Container-people .Box-img p {
+      font-size: 25px;
+      padding: 15px;
+      font-family: universRegular; }
+      .Container-people .Box-img p span {
+        font-size: 55px;
+        font-family: universMedium; }
 
 .Container-traines {
   display: flex;
@@ -363,16 +376,34 @@ body {
   flex-direction: column;
   width: 80%; }
   .Container-act p {
-    padding: 50px 0;
+    padding: 30px 0;
     font-size: 1.2em;
     text-align: justify; }
+  .Container-act .Box-Icon-small {
+    display: flex;
+    margin-top: 20px; }
+    .Container-act .Box-Icon-small .Icon-box-small img {
+      background-color: #FFF1A8;
+      padding: 31px 40px; }
+    .Container-act .Box-Icon-small p {
+      background-color: #FFE666;
+      padding: 46px 50px;
+      font-size: 1.5em;
+      margin-left: 20px; }
+      .Container-act .Box-Icon-small p span {
+        font-weight: bold; }
   .Container-act .Box-Icon-text {
     display: flex; }
     .Container-act .Box-Icon-text p {
       background-color: #FFE666;
-      padding: 36px 40px;
-      font-size: 30px;
+      padding: 40px 46px;
+      font-size: 1.5em;
       margin-left: 20px; }
+      .Container-act .Box-Icon-text p span {
+        font-weight: bold; }
+    .Container-act .Box-Icon-text .Icon-box img {
+      background-color: #FFF1A8;
+      padding: 43px; }
   .Container-act img.main {
     margin: 20px 0; }
   .Container-act .generation h2 {
@@ -383,7 +414,8 @@ body {
   .Container-act .contracts {
     margin-bottom: 60px; }
     .Container-act .contracts h2 {
-      margin-bottom: 20px; }
+      font-size: 1.8em;
+      margin-bottom: 30px; }
 
 .Container-value {
   display: flex;
@@ -399,6 +431,12 @@ body {
     padding-left: 10px;
     font-weight: 500;
     font-family: universMedium; }
+  .Container-value .Hidden-Box-img {
+    display: none;
+    background-color: #fbc90b;
+    width: 400px;
+    align-self: center;
+    height: fit-content; }
   .Container-value .Box-img {
     background-color: #fbc90b;
     width: 400px;
@@ -408,15 +446,29 @@ body {
     margin-right: 700px; }
 
 .Container-estimates {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 60px; }
-  .Container-estimates .estimate p {
-    text-align: justify;
-    font-size: 1.4em; }
-  .Container-estimates .estimate h2 span {
-    width: 100%;
-    background-color: #ffe666;
-    line-height: 1.35;
-    padding: 0 10px; }
+  .Container-estimates .row-1 {
+    display: flex;
+    margin-bottom: 40px; }
+  .Container-estimates .row-2 {
+    display: flex; }
+  .Container-estimates .estimate {
+    margin-right: auto; }
+    .Container-estimates .estimate p {
+      text-align: justify;
+      font-size: 1.5em;
+      font-family: universMedium; }
+    .Container-estimates .estimate h2 {
+      font-size: 3.6em; }
+      .Container-estimates .estimate h2 span {
+        font-family: universBold;
+        width: 100%;
+        background-color: #fbc90b;
+        line-height: 1.35;
+        padding: 0 10px;
+        padding-right: 1em; }
 
 .Container-cortes {
   display: flex;
@@ -434,6 +486,13 @@ body {
       font-size: 25px;
       font-family: universRegular; }
 
+.Container-asg-program h2 {
+  font-family: universBold;
+  font-weight: bold;
+  font-size: 3em; }
+.Container-asg-program p {
+  font-family: universRegular;
+  font-size: 1.2em; }
 .Container-asg-program .human {
   background-color: #1ddcff; }
 .Container-asg-program .green {
@@ -443,9 +502,14 @@ body {
 
 .Container-destaques {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  width: 100vw; }
   .Container-destaques .title {
-    margin-bottom: 80px; }
+    font-family: universBold;
+    font-weight: bold;
+    font-size: 3em;
+    margin-bottom: 80px;
+    text-align: center; }
   .Container-destaques .cards-asg {
     display: flex;
     flex-direction: column;
@@ -490,6 +554,15 @@ body {
         margin-bottom: 30px; }
         .Container-destaques .cards-asg .card-asg .card-asg-body span {
           font-weight: bold; }
+        .Container-destaques .cards-asg .card-asg .card-asg-body p {
+          font-size: 1.5em;
+          font-weight: bold;
+          margin-top: 20px; }
+        .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button {
+          margin-top: 20px;
+          transition: all 0.5s; }
+        .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button:hover {
+          transform: scale(1.1); }
         .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button-blue {
           color: #000;
           background-color: #1ddcff; }
@@ -499,10 +572,6 @@ body {
         .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button-yellow {
           color: #000;
           background-color: #fbc90b; }
-
-.Icon-box img {
-  background-color: #FFF1A8;
-  padding: 30px; }
 
 /*footer*/
 .img-footer {
@@ -520,7 +589,8 @@ body {
   margin: auto;
   border-radius: 10px;
   font-size: 25px;
-  color: #ffff; }
+  color: #ffff;
+  text-align: center; }
   .box-orange a {
     color: #ffff;
     text-decoration: none; }
@@ -536,5 +606,200 @@ body {
 .footer {
   display: flex;
   flex-direction: column; }
+  .footer span {
+    color: #b7b7b7; }
+
+@media only screen and (max-width: 600px) {
+  .navbar-brand a span {
+    display: none; }
+
+  .text-banner {
+    background-position: center center;
+    padding: 200px 40px; }
+    .text-banner h1 {
+      font-size: 1.8em; }
+    .text-banner h2 {
+      font-size: 1.3em; }
+
+  .section-primary {
+    margin-top: 30px; }
+
+  .Banner-third {
+    background-position: center left; }
+    .Banner-third h2 {
+      font-size: 2em; }
+
+  .Container-Cards {
+    gap: 200px 0; }
+
+  .Container-Box .Box {
+    width: 100vw;
+    height: 55rem; }
+
+  .Container-people {
+    margin-top: 60px;
+    margin-bottom: 40px; }
+    .Container-people img {
+      display: none; }
+    .Container-people .Box-img {
+      margin-left: -2px; }
+
+  .Container-act .Box-Icon-small {
+    display: flex;
+    flex-direction: column; }
+    .Container-act .Box-Icon-small p {
+      background-color: #FFE666;
+      font-size: 1em;
+      margin-left: 0px; }
+    .Container-act .Box-Icon-small .Icon-box-small img {
+      background-color: #FFF1A8;
+      width: 7rem; }
+  .Container-act .Box-Icon-text {
+    display: flex;
+    flex-direction: column; }
+    .Container-act .Box-Icon-text p {
+      background-color: #FFE666;
+      font-size: 1em;
+      margin-left: 0px; }
+    .Container-act .Box-Icon-text .Icon-box img {
+      background-color: #FFF1A8;
+      width: 7rem; }
+
+  .Container-cortes {
+    display: flex;
+    flex-direction: column; }
+    .Container-cortes .bg-yellow {
+      margin-top: 10px; }
+      .Container-cortes .bg-yellow p {
+        font-size: 1.3em; }
+
+  .Container-value {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-left: 0; }
+    .Container-value img {
+      display: none; }
+    .Container-value .Box-img {
+      display: none; }
+    .Container-value .Hidden-Box-img {
+      display: block;
+      background-color: #fbc90b;
+      width: 300px;
+      align-self: center;
+      height: fit-content; }
+
+  .Container-estimates {
+    margin-bottom: 30px; }
+    .Container-estimates .row-1 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: -10px; }
+    .Container-estimates .row-2 {
+      display: flex;
+      flex-direction: column; }
+    .Container-estimates .estimate {
+      margin-bottom: 40px; }
+      .Container-estimates .estimate p {
+        text-align: justify;
+        font-size: 1em;
+        font-family: universMedium; }
+      .Container-estimates .estimate h2 {
+        font-size: 2em; }
+        .Container-estimates .estimate h2 span {
+          font-family: universBold;
+          width: 100%;
+          background-color: #fbc90b;
+          line-height: 1.35;
+          padding: 0 10px;
+          padding-right: 1em; }
+
+  .Container-asg-program h2 {
+    font-size: 1.5em; }
+  .Container-asg-program p {
+    text-align: justify;
+    font-size: 1em; }
+
+  .Container-destaques {
+    display: flex;
+    flex-direction: column; }
+    .Container-destaques .title {
+      font-family: universBold;
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 80px; }
+    .Container-destaques .cards-asg {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #eee; }
+      .Container-destaques .cards-asg .card-asg {
+        margin-top: -15px; }
+      .Container-destaques .cards-asg .card-asg {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        padding: 0 20px;
+        width: 90%; }
+        .Container-destaques .cards-asg .card-asg .carg-asg-img-blue {
+          display: flex;
+          justify-content: center;
+          width: 85%;
+          background-color: #1ddcff;
+          margin-bottom: 30px; }
+          .Container-destaques .cards-asg .card-asg .carg-asg-img-blue img {
+            padding: 20px; }
+        .Container-destaques .cards-asg .card-asg .carg-asg-img-green {
+          display: flex;
+          justify-content: center;
+          width: 85%;
+          background-color: #c4e877;
+          margin-bottom: 30px; }
+          .Container-destaques .cards-asg .card-asg .carg-asg-img-green img {
+            padding: 20px; }
+        .Container-destaques .cards-asg .card-asg .carg-asg-img-yellow {
+          display: flex;
+          justify-content: center;
+          width: 85%;
+          background-color: #fbc90b;
+          margin-bottom: 30px; }
+          .Container-destaques .cards-asg .card-asg .carg-asg-img-yellow img {
+            padding: 20px; }
+        .Container-destaques .cards-asg .card-asg .card-asg-body {
+          width: 85%;
+          margin-bottom: 30px; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body h3 {
+            font-size: 1.5em; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body p {
+            font-size: 1em; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body span {
+            font-weight: bold;
+            font-size: 1em; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button-blue {
+            color: #000;
+            background-color: #1ddcff; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button-green {
+            color: #000;
+            background-color: #c4e877; }
+          .Container-destaques .cards-asg .card-asg .card-asg-body .card-asg-button-yellow {
+            color: #000;
+            background-color: #fbc90b; }
+
+  .img-footer {
+    background-position: center right;
+    padding: 0 8px; }
+    .img-footer .box-orange {
+      height: auto;
+      font-size: 1em; }
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 60px; } }
 
 /*# sourceMappingURL=main.css.map */
